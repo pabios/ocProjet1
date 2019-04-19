@@ -3,42 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/acceuil.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>page d'Acceuil</title>
 </head>
 
 <body>
     <!--le Menu du Site-->
-    <header>
-        <p>
-            <img src="image/logo.png" alt="le super logo">
-        </p>
-        <nav>
-            <div class="table">
-                <a href="#" id="logo"></a>
-                <ul>
-                    <li class="menu-index">
-                        <a href="app/index.html">Acceuil</a>
-                    </li>
-                    <li class="menu-service">
-                        <a href="app/service.html">Services</a>
-                    </li>
-                    <li class="menu-portofolio">
-                        <a href="app/portofolio.html">Portofolio</a>
-                    </li>
-                    <li class="menu-contact">
-                        <a href="app/contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-
-        </nav>
-    </header>
+    <section>
+        <header>
+            <a href="index.html" class="logo"><img src="image/logo.png" alt="le logo"></a>
+            <a class="toggle">Menu</a>
+            <ul class="active">
+                <li class="menu-index">
+                    <a href="index.html">Acceuil</a>
+                </li>
+                <li class="menu-service">
+                    <a href="app/service.html">Services</a>
+                </li>
+                <li class="menu-portofolio">
+                    <a href="app/portofolio.html">Portofolio</a>
+                </li>
+                <li class="menu-contact">
+                    <a href="app/contact.html">Contact</a>
+                </li>
+            </ul>
+        </header>
+    </section>
 
     <div class="container">
-
         <input type="radio" id="i1" name="images" checked />
         <input type="radio" id="i2" name="images" />
         <input type="radio" id="i3" name="images" />
@@ -47,51 +43,93 @@
 
         <div class="slide_img" id="one">
 
-            <img src="http://www.bhmpics.com/wallpapers/little_pony_art-800x480.jpg">
+            <img src="image/bg1.jpg">
 
             <label class="prev" for="i5"><span>&#x2039;</span></label>
             <label class="next" for="i2"><span>&#x203a;</span></label>
-
+            <span><hr class="trait1" width="30%" align="left" size="5"></apan>
+                <div class="description">
+                        <span>Webagency :</span> <em>l'agence de tous vos projet ! </em>
+            <h3>
+                vous avez un projet web ? la Webagency vous aide a le realiser
+            </h3>
+            <a href="app/service.html">Plus d'infos</a>
         </div>
 
-        <div class="slide_img" id="two">
 
-            <img src="https://preview.ibb.co/e5OShF/cropped_800_480_111290.jpg ">
+    </div>
 
-            <label class="prev" for="i1"><span>&#x2039;</span></label>
-            <label class="next" for="i3"><span>&#x203a;</span></label>
+    <div class="slide_img" id="two">
 
-        </div>
+        <img src="image/bg2.jpg">
 
-        <div class="slide_img" id="three">
-            <img src="http://wallpaperswide.com/download/up_house-wallpaper-1280x800.jpg">
+        <label class="prev" for="i1"><span>&#x2039;</span></label>
+        <label class="next" for="i3"><span>&#x203a;</span></label>
+        <span><hr class="trait2" width="50%" align="left" size="5"></apan>
+            <div class="description">
+                    <span>Webagency :</span> <em>l'agence de tous vos projet ! </em>
+        <h3>
+            vous avez un projet web ? la Webagency vous aide a le realiser
+        </h3>
+        <a href="app/service.html">Plus d'infos</a>
+    </div>
+    </div>
 
-            <label class="prev" for="i2"><span>&#x2039;</span></label>
-            <label class="next" for="i4"><span>&#x203a;</span></label>
-        </div>
+    <div class="slide_img" id="three">
+        <img src="image/bg1.jpg">
 
-        <div class="slide_img" id="four">
-            <img src="http://wallpaperswide.com/download/big_hero_6_baymax-wallpaper-1152x720.jpg">
+        <label class="prev" for="i2"><span>&#x2039;</span></label>
+        <label class="next" for="i4"><span>&#x203a;</span></label>
+        <span><hr class="trait3" align="left" size="5"></apan>
+            <div class="description">
+                    <span>Webagency :</span> <em>l'agence de tous vos projet ! </em>
+        <h3>
+            vous avez un projet web ? la Webagency vous aide a le realiser
+        </h3>
+        <a href="app/service.html">Plus d'infos</a>
+    </div>
 
-            <label class="prev" for="i3"><span>&#x2039;</span></label>
-            <label class="next" for="i5"><span>&#x203a;</span></label>
-        </div>
+    </div>
 
-        <div class="slide_img" id="five">
-            <img src="http://www.wallpapereast.com/static/images/toys-wallpaper-hd-16339-17046-hd-wallpapers.jpg">
+    <div class="slide_img" id="four">
+        <img src="image/bg2.jpg">
 
-            <label class="prev" for="i4"><span>&#x2039;</span></label>
-            <label class="next" for="i1"><span>&#x203a;</span></label>
+        <label class="prev" for="i3"><span>&#x2039;</span></label>
+        <label class="next" for="i5"><span>&#x203a;</span></label>
+        <span><hr class="trait4" align="left" size="5"></apan>
+            <div class="description">
+                    <span>Webagency :</span> <em>l'agence de tous vos projet ! </em>
+        <h3>
+            vous avez un projet web ? la Webagency vous aide a le realiser
+        </h3>
+        <a href="app/service.html">Plus d'infos</a>
+    </div>
 
-        </div>
+    </div>
 
-        <div id="nav_slide">
-            <label for="i1" class="dots" id="dot1"></label>
-            <label for="i2" class="dots" id="dot2"></label>
-            <label for="i3" class="dots" id="dot3"></label>
-            <label for="i4" class="dots" id="dot4"></label>
-            <label for="i5" class="dots" id="dot5"></label>
-        </div>
+    <div class="slide_img" id="five">
+        <img src="image/bg1.jpg">
+
+        <label class="prev" for="i4"><span>&#x2039;</span></label>
+        <label class="next" for="i1"><span>&#x203a;</span></label>
+        <span><hr class="trait5" align="left" size="5"></apan>
+            <div class="description">
+                  <span>Webagency :</span> <em>l'agence de tous vos projet ! </em>
+        <h3>
+            vous avez un projet web ? la Webagency vous aide a le realiser
+        </h3>
+        <a href="app/service.html">Plus d'infos</a>
+    </div>
+
+    </div>
+
+    <div id="nav_slide">
+        <label for="i1" class="dots" id="dot1"></label>
+        <label for="i2" class="dots" id="dot2"></label>
+        <label for="i3" class="dots" id="dot3"></label>
+        <label for="i4" class="dots" id="dot4"></label>
+        <label for="i5" class="dots" id="dot5"></label>
+    </div>
 
     </div>
 
