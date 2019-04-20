@@ -1,5 +1,223 @@
 body {
-    background-color: azure;
+    font-family: 'Century Gothic', Calibri, serif;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(247, 250, 253);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    /* margin: 0 auto;*/
     width: 100%;
     height: auto;
+    /* border-bottom: solid 10px blue;*/
+    margin-bottom: 100px;
+    position: absolute;
+    margin-top: 6%;
+    color: black;
+}
+
+.entete {
+    margin-bottom: 2%;
+}
+
+.entete h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4em;
+}
+
+.entete input {
+    position: absolute;
+    top: 15%;
+    left: 49%;
+    background-color: blue;
+    color: blue;
+}
+
+.entete hr {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+}
+
+.entete p {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.p1,
+.p2,
+.pservice {
+    font-size: 1.2em;
+    text-justify: auto;
+}
+
+.p2 {
+    text-indent: 20%;
+}
+
+
+/* le moniteur apple */
+
+.tvApple {
+    width: 40%;
+    height: auto;
+    padding-left: 10%;
+    float: left;
+}
+
+
+/*liste des services */
+
+.listeService {
+    width: 45%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.tvApple,
+.listeService {
+    display: inline-block;
+}
+
+.ui {
+    width: 100%;
+    height: auto;
+}
+
+.ux {
+    width: 100%;
+    height: auto;
+}
+
+.seo {
+    width: 100%;
+    height: auto;
+}
+
+.ux,
+.ui,
+.seo {
+    display: flex;
+}
+
+.foto img {
+    width: 100%;
+    height: 68%;
+    border: 1px solid white;
+    border-radius: 55%;
+    margin-top: 30%;
+    margin-right: 10%;
+}
+
+.infoService {
+    padding-left: 5%;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 992px) {
+    .container {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+        margin-top: 40%;
+    }
+    .entete {
+        width: 100%;
+        margin-bottom: 2%;
+        padding-right: 50%;
+    }
+    .entete h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1em;
+    }
+    .entete input,
+    hr {
+        visibility: hidden;
+    }
+    .entete p {
+        width: 100%;
+        margin-left: 5%;
+    }
+    .p1 {
+        margin-top: 15%;
+    }
+    .p1,
+    .p2,
+    .pservice {
+        font-size: 1em;
+        text-justify: auto;
+    }
+    .p2 {
+        text-indent: 15%;
+    }
+    /*liste des services pour mobile responsive */
+    .tvApple {
+        margin: 0;
+        height: auto;
+        width: 100%;
+    }
+    .tvApple img {
+        width: 100%;
+        margin: 0;
+    }
+    .listeService {
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+    }
+    .ui {
+        width: 100%;
+        height: auto;
+    }
+    .ux {
+        width: 100%;
+        height: auto;
+    }
+    .seo {
+        width: 100%;
+        height: auto;
+    }
+    .ux,
+    .ui,
+    .seo {
+        display: flex;
+    }
+    .foto img {
+        width: 100%;
+        height: 68%;
+        border: 1px solid white;
+        border-radius: 55%;
+        margin-top: 30%;
+        margin-right: 10%;
+    }
+    .infoService {
+        padding-left: 5%;
+    }
+    .foot {
+        background: rgba(255, 255, 255, .5);
+        color: black;
+        width: 100%;
+        padding-top: 10%;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.foot {
+    background: rgba(255, 255, 255, .5);
+    /* border-top: 2px solid black;*/
+    color: black;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 6%;
+    text-align: center;
+    font-weight: bold;
 }
