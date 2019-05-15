@@ -1,0 +1,78 @@
+    /*le iframe de google maps */
+    
+    .googleMap {
+        /* margin: 0 auto;*/
+        width: 100%;
+        background-color: red;
+        position: absolute;
+        top: 15%;
+    }
+    
+    .googleMap iframe {
+        width: 100%;
+        height: 980px;
+    }
+    /* the form */
+    
+    .form-wrap {
+        width: 400px;
+        height: 530px;
+        background: #F0F5F7;
+        padding: 20px 20px;
+        box-sizing: border-box;
+        position: fixed;
+        left: 80%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        margin-bottom: 30%;
+    }
+    
+    h2 {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .pTel {
+        margin-bottom: 20px;
+    }
+    
+    input,
+    textarea {
+        width: 100%;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        padding: 6px 15px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: black;
+    }
+    
+    input[type="button"] {
+        background: #5CACD3;
+        border: 0;
+        cursor: pointer;
+        color: #fff;
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    
+    input[type="button"]:hover {
+        background: #5CACD3;
+        transition: .6s;
+    }
+    
+     ::placeholder {
+        color: black;
+    }
+    
+    .foot {
+        background: rgba(255, 255, 255, .5);
+        /* border-top: 2px solid black;*/
+        color: black;
+        width: 100%;
+        padding-top: 5%;
+        padding-bottom: 6%;
+        text-align: center;
+        font-weight: bold;
+    }

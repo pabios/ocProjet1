@@ -48,7 +48,7 @@
            }
            
            .description span {
-               color: #0070BB;
+               color: #97CDE6;
                text-transform: uppercase;
                font-size: 30px;
            }
@@ -65,15 +65,15 @@
            }
            
            .description a {
-               border: 1px solid blue;
-               background-color: #0070BB;
+               border: 1px solid #97CDE6;
+               background-color: #97CDE6;
                color: white;
                padding: 10px;
                text-decoration: none;
            }
            
            .trait1 {
-               border-top: 10px solid blue;
+               border-top: 10px solid #97CDE6;
                border-bottom: 1px solid rgb(247, 250, 253);
                border-top-right-radius: 15px;
                width: 30%;
@@ -84,7 +84,7 @@
            }
            
            .trait2 {
-               border-top: 10px solid blue;
+               border-top: 10px solid #97CDE6;
                border-bottom: 1px solid rgb(247, 250, 253);
                border-top-right-radius: 15px;
                width: 50%;
@@ -95,7 +95,7 @@
            }
            
            .trait3 {
-               border-top: 10px solid blue;
+               border-top: 10px solid #97CDE6;
                border-bottom: 1px solid rgb(247, 250, 253);
                border-top-right-radius: 15px;
                width: 75%;
@@ -106,7 +106,7 @@
            }
            
            .trait4 {
-               border-top: 10px solid blue;
+               border-top: 10px solid #97CDE6;
                border-bottom: 1px solid rgb(247, 250, 253);
                border-top-right-radius: 15px;
                width: 85%;
@@ -117,7 +117,7 @@
            }
            
            .trait5 {
-               border-top: 10px solid blue;
+               border-top: 10px solid #97CDE6;
                border-bottom: 1px solid rgb(247, 250, 253);
                border-top-right-radius: 15px;
                width: 100%;
@@ -140,7 +140,8 @@
            
            .prev,
            .next {
-               width: 12%;
+               width: 5%;
+               height: 20px;
                height: inherit;
                position: absolute;
                top: 0;
@@ -154,10 +155,22 @@
            
            .next {
                right: 0;
+               height: 10%;
+               margin-top: 14%;
+               padding-bottom: 3%;
+               padding-right: 2%;
+               border-top-left-radius: 100%;
+               border-bottom-left-radius: 100%;
            }
            
            .prev {
                left: 0;
+               height: 10%;
+               margin-top: 14%;
+               padding-bottom: 3%;
+               padding-right: 3%;
+               border-top-right-radius: 100%;
+               border-bottom-right-radius: 100%;
            }
            
            label span {

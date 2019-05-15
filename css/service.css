@@ -3,7 +3,7 @@ body {
     font-size: 13px;
     margin: 0px;
     padding: 0px;
-    background-color: rgb(247, 250, 253);
+    background-color: #FFFFFF;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -21,7 +21,7 @@ body {
 }
 
 .entete {
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 .entete h1 {
@@ -30,18 +30,22 @@ body {
     font-size: 4em;
 }
 
-.entete input {
-    position: absolute;
-    top: 15%;
-    left: 49%;
-    background-color: blue;
-    color: blue;
+.dotWithBorder {
+    width: 20%;
+    margin: 0 auto;
+    padding: 0%;
+    height: auto;
+    border-top: 2px solid rgba(0, 0, 0, .1);
 }
 
-.entete hr {
+.entete i {
+    color: #00b1ba;
+    background-color: white;
+    font-size: 20px;
+    padding: 0.5%;
     position: absolute;
-    top: 15%;
-    left: 45%;
+    top: 21vh;
+    left: 48%;
 }
 
 .entete p {
@@ -116,6 +120,25 @@ body {
 
 .infoService {
     padding-left: 5%;
+}
+
+
+/*fontAwesome */
+
+.foto i {
+    color: #5CACD3;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 40px;
+    padding: 15px;
+    margin-top: 20%;
+}
+
+.listeService span i {
+    color: #5CACD3;
+    position: relative;
+    top: 35%;
+    right: 36%;
 }
 
 
