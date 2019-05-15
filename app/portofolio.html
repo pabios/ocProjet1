@@ -15,24 +15,29 @@
 <body>
     <!--le Menu du Site-->
     <section>
-        <header>
-            <a href="index.html" class="logo"><img src="../image/logo.png" alt="le logo"></a>
-            <a class="toggle">Menu</a>
-            <ul class="active">
-                <li class="menu-index">
-                    <a href="../index.html">Acceuil</a>
-                </li>
-                <li class="menu-service">
-                    <a href="./service.html">Services</a>
-                </li>
-                <li class="menu-portofolio">
-                    <a href="./portofolio.html">Portofolio</a>
-                </li>
-                <li class="menu-contact">
-                    <a href="./contact.html">Contact</a>
-                </li>
-            </ul>
-        </header>
+        <div class="containerMenu">
+            <nav>
+                <input type="checkbox" id="nav" class="hidden">
+                <label for="nav" class="nav-btn">
+                              <i></i>
+                              <i></i>
+                              <i></i>                          
+                          </label>
+                <div class="logo">
+                    <a href="#">
+                        <img src="../image/logo.png" alt="le logo du site">
+                    </a>
+                </div>
+                <div class="nav-wrapper">
+                    <ul>
+                        <li><a href="../index.html">Acceuil</a></li>
+                        <li><a href="./service.html">Services</a></li>
+                        <li><a href="./portofolio.html">Portofolio</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </section>
 
 
