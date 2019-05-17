@@ -144,14 +144,86 @@ body {
 }
 
 
-/* Responsive design */
+/**
+* Responsive design avec un ecran plus petit qu'un iphone 5
+**/
+
+@media screen and (max-width:300px) {
+    .foto i {
+        color: #5CACD3;
+        border: 1px solid black;
+        border-radius: 50%;
+        font-size: 30px;
+        padding: 15px;
+        margin-top: 20%;
+    }
+    .listeService span i {
+        color: #5CACD3;
+        position: relative;
+        top: 18%;
+        right: 36%;
+    }
+}
+
+
+/**
+*Responsive iphone 5 en mode paysage
+**/
+
+@media screen and (min-width:300px) and (max-width:640px) and (orientation: portrait) {
+    .entete {
+        margin-top: 2%;
+        width: 100%;
+    }
+    h1 {
+        color: blue;
+        margin-left: 40%;
+        width: 100%;
+    }
+    .dotWithBorder {
+        visibility: hidden;
+        width: 50%;
+        margin: 0 auto;
+        padding: 0%;
+        height: auto;
+        border-top: 2px solid rgba(0, 0, 0, .1);
+        margin-bottom: auto;
+        margin-left: 74%;
+    }
+    .entete i {
+        visibility: hidden;
+        color: #00b1ba;
+        background-color: white;
+        font-size: 10px;
+        padding: 0.5%;
+        position: absolute;
+        top: 5vh;
+        left: 47%;
+    }
+    .paragrapheEntete {
+        width: 180%;
+        margin-top: -4vh;
+    }
+    .entete p {
+        padding-left: 4%;
+    }
+    .p1,
+    .p2,
+    .pservice {
+        font-size: 1.2em;
+        text-justify: auto;
+    }
+    .p2 {
+        text-indent: 20%;
+    }
+}
 
 @media (max-width: 992px) {
     .container {
         flex-wrap: wrap;
         width: 100%;
         margin: 0;
-        margin-top: 40%;
+        margin-top: 10%;
     }
     .entete {
         width: 100%;
@@ -159,13 +231,28 @@ body {
         padding-right: 50%;
     }
     .entete h1 {
-        text-align: center;
+        width: 150%;
+        color: black;
         text-transform: uppercase;
-        font-size: 1em;
+        font-size: 2em;
     }
-    .entete input,
-    hr {
-        visibility: hidden;
+    .dotWithBorder {
+        width: 45%;
+        margin: 0 auto;
+        padding: 0%;
+        height: auto;
+        border-top: 2px solid rgba(0, 0, 0, .1);
+        margin-bottom: auto;
+        margin-left: 50%;
+    }
+    .entete i {
+        color: #00b1ba;
+        background-color: white;
+        font-size: 10px;
+        padding: 0.5%;
+        position: absolute;
+        top: 10.5vh;
+        left: 35%;
     }
     .entete p {
         width: 100%;
@@ -196,7 +283,10 @@ body {
     .listeService {
         width: 100%;
         height: auto;
-        margin-top: 5%;
+        margin: 0;
+    }
+    .infoService {
+        padding-right: 20%;
     }
     .ui {
         width: 100%;

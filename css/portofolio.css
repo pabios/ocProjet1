@@ -131,8 +131,67 @@
         opacity: 1;
     }
     /*media queries */
+    /**
+* Responsive design avec le plus petit ecran  qu'un iphone 5
+**/
+    
+    @media screen and (max-width:300px) {
+        .entete i {
+            visibility: hidden;
+        }
+    }
+    /**
+*Responsive iphone 5 en mode portrait
+**/
+    
+    @media screen and (min-width:300px) and (max-width:640px) and (orientation: portrait) {
+        .entete h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1em;
+        }
+        .dotWithBorder {
+            width: 20%;
+            margin: 0 auto;
+            padding: 0%;
+            height: auto;
+            border-top: 2px solid rgba(0, 0, 0, .1);
+            margin-bottom: 2%;
+        }
+        .entete i {
+            visibility: hidden;
+        }
+    }
     
     @media (max-width: 992px) {
+        .container {
+            margin-top: 20%;
+        }
+        .entete h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1em;
+        }
+        .dotWithBorder {
+            /* visibility: hidden;*/
+            width: 10%;
+            margin: 0 auto;
+            padding: 0%;
+            height: auto;
+            border-top: 2px solid rgba(0, 0, 0, .1);
+            margin-bottom: 2%;
+        }
+        .entete i {
+            color: #00b1ba;
+            background-color: white;
+            font-size: 7px;
+            padding: 0.5%;
+            position: absolute;
+            top: 3%;
+            left: 49%;
+            border: 1px solid #ffffff;
+            border-radius: 45%;
+        }
         .flexContainer {
             display: flex;
             flex-direction: column;
@@ -143,14 +202,64 @@
             width: 100%;
             height: auto;
         }
-        .un {
-            background-color: brown;
+        /*******
+        * menu portofolio avec triangle  Responsive
+        *******/
+        .menuTriangle {
+            background-color: black;
+            width: 2000px;
+            height: 80px;
+            margin-bottom: 50px;
+            margin-left: -10%;
         }
-        .un img {
-            width: 800px;
-            height: 100%;
-            margin: 20%;
+        .menuTriangle nav {
+            background-color: red;
+            height: auto;
+            /*margin: 0 auto;*/
         }
+        .menuTriangle nav ul {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            /* transition: .5s;*/
+            background-color: red;
+            border: 1px solid #E5E5E5;
+            border-radius: 8px;
+        }
+        .menuTriangle nav ul li:nth-child(4) {
+            visibility: hidden;
+            list-style: none;
+            height: auto;
+            margin: 1px;
+            color: red;
+        }
+        .menuTriangle nav ul li a {
+            color: red;
+            position: relative;
+            display: block;
+            /* margin: 25px 25px;*/
+            text-transform: lowercase;
+            text-decoration: none;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        /**
+        * Portofolio Responsive
+        **/
+        #portofolio {
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            margin-left: 20%;
+        }
+        .containerOverlay {
+            display: flex;
+            flex-wrap: wrap;
+            width: 200px;
+        }
+        /**
+        *footer
+        **/
         .foot {
             background: rgba(255, 255, 255, .5);
             color: black;
@@ -184,6 +293,7 @@
     .menuTriangle nav {
         width: 40%;
         margin: 0 auto;
+        background-color: #E5E5E5;
     }
     
     .menuTriangle nav ul {

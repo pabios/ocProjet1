@@ -272,3 +272,22 @@
                }
            }
            /* fin du slider 2 */
+           
+           @media screen and (max-width: 864px) {
+               .description {
+                   font-size: 11px;
+                   padding-bottom: 50%;
+                   width: 70%;
+                   position: relative;
+                   top: -95%;
+               }
+               .description span {
+                   font-size: 11px;
+               }
+               .description em {
+                   font-size: 11px;
+               }
+               .description a {
+                   visibility: hidden;
+               }
+           }

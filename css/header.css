@@ -106,9 +106,11 @@ nav ul li a {
     font-weight: 600;
 }
 
-@media screen and (max-width: 864px) {
+@media screen and (max-width: 992px) {
     .logo {
         padding: 0;
+        background-color: white;
+        height: 0;
     }
     .nav-wrapper {
         position: fixed;
@@ -133,6 +135,8 @@ nav ul li a {
         width: 100%;
         text-align: right;
         margin-bottom: 10px;
+        /*new now */
+        height: auto;
     }
     .nav-wrapper ul li:nth-child(1) a {
         transition-delay: 0.2s;
