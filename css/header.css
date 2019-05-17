@@ -2,12 +2,14 @@
     box-sizing: border-box;
 }
 
+
+/*
 html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
-}
+}*/
 
 body {
     margin: 0;
@@ -20,17 +22,40 @@ body {
     background-size: cover;
 }
 
+.containerMenu {
+    background-color: #000;
+    width: 100%;
+    height: 80%;
+}
+
+.nav-wrapper {
+    position: fixed;
+    background-color: white;
+    height: 80px;
+    width: 70%;
+    display: flex;
+    margin-top: 0px;
+    margin-left: 35%;
+    margin-right: 0%;
+    z-index: 5000;
+    box-shadow: 5px 5px white;
+    padding-right: 50px;
+}
+
 nav {
+    background-color: #000;
     padding-top: 1px;
-    position: sticky;
-    top: 20px;
 }
 
 .logo {
+    position: fixed;
+    background-color: white;
+    width: 40%;
     float: left;
     padding: 8px;
-    margin-left: 16px;
-    margin-top: 8px;
+    margin-top: 2px;
+    z-index: 5000;
+    box-shadow: 5px 5px white;
 }
 
 .logo a {
@@ -57,8 +82,9 @@ nav ul li {
 }
 
 nav ul li:hover {
-    border-top: 5px solid blue;
+    border-top: 5px solid #5CACD3;
     padding-top: 4%;
+    height: auto;
 }
 
 nav ul li:not(:first-child) {

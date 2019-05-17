@@ -36,16 +36,7 @@
         padding: 0%;
         height: auto;
         border-top: 2px solid rgba(0, 0, 0, .1);
-    }
-    
-    .entete i {
-        color: #00b1ba;
-        background-color: white;
-        font-size: 20px;
-        padding: 0.5%;
-        position: relative;
-        right: 22%;
-        top: -30%;
+        margin-bottom: 2%;
     }
     
     .entete p {
@@ -64,11 +55,6 @@
         text-indent: 20%;
     }
     /*overlay image et text*/
-    
-    .title {
-        font-family: sans-serif;
-        color: #dc2d5e;
-    }
     
     .containerOverlay {
         position: relative;
@@ -107,8 +93,9 @@
         left: 0;
         background-color: #3a3837bd;
     }
+    /*fontAwesome */
     
-    i {
+    .overlayFade i {
         color: white;
         background-color: #00b1ba;
         border: 1px solid white;
@@ -118,6 +105,18 @@
         margin-left: 70%;
         margin-top: -70%;
         padding: 8%;
+    }
+    
+    .entete i {
+        color: #00b1ba;
+        background-color: white;
+        font-size: 20px;
+        padding: 0.5%;
+        position: absolute;
+        top: 12.5%;
+        left: 48%;
+        border: 1px solid #ffffff;
+        border-radius: 45%;
     }
     
     .overlay {
@@ -130,24 +129,6 @@
     .containerOverlay:hover .overlay,
     .containerOverlay:hover .overlayFade {
         opacity: 1;
-    }
-    /*fontAwesome */
-    
-    .entete span {
-        border-top: 2px solid black;
-    }
-    
-    .entete span i {
-        color: #5CACD3;
-        position: absolute;
-        top: 15%;
-        left: 49%;
-        font-size: 20px;
-    }
-    
-    .entete span {
-        background-color: #ffffff;
-        border: 1px solid black;
     }
     /*media queries */
     
@@ -179,27 +160,6 @@
             font-weight: bold;
         }
     }
-    /* the flex container for the picture */
-    
-    .flexContainer {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 10%;
-    }
-    
-    .un {
-        background-color: blue;
-        background-color: 1px solid black;
-        border-radius: 40px;
-        width: 24%;
-        height: 60%;
-        margin: 5px;
-    }
-    
-    .un img {
-        width: 90%;
-        height: 90%;
-    }
     /*le navigation avec les fleches de triangle */
     
     .arrow-down {
@@ -208,24 +168,25 @@
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
         border-top: 15px solid #5CACD3;
-        margin-left: 36%;
-        margin-top: 5.1%;
+        position: relative;
+        top: 12%;
+        left: 30%;
     }
     /*menu portofolio avec triangle */
     
-    #menuTriangle {
+    .menuTriangle {
+        background-color: #F5F5F5;
         width: 100%;
-        margin: 0 auto;
+        height: 100px;
+        margin-bottom: 50px;
     }
     
-    #menuTriangle nav {
-        background-color: black;
+    .menuTriangle nav {
         width: 40%;
         margin: 0 auto;
-        border: 2px solid #F5F5F5;
     }
     
-    #menuTriangle nav ul {
+    .menuTriangle nav ul {
         position: relative;
         margin: 0;
         padding: 0;
@@ -233,31 +194,53 @@
         float: right;
         /* transition: .5s;*/
         background-color: #E5E5E5;
+        width: 100%;
+        border: 1px solid #E5E5E5;
+        border-radius: 8px;
     }
     
-    #menuTriangle nav ul li {
+    .menuTriangle nav ul li {
         list-style: none;
-        border: 2px solid transparent;
+        height: 69px;
+        margin: 1px;
+        padding: 5%;
     }
     
-    #menuTriangle nav ul li a {
+    .menuTriangle nav ul li a {
         position: relative;
         display: block;
-        margin: 25px 25px;
+        /* margin: 25px 25px;*/
         text-transform: capitalize;
         text-decoration: none;
         color: #262626;
+        font-size: 11px;
+        font-weight: bold;
     }
     
-    #menuTriangle nav ul li:hover {
-        height: auto;
+    #pabios {
+        margin-top: 28%;
+    }
+    
+    .menuTriangle nav ul li:hover {
+        height: 69px;
+        width: auto;
         background-color: #5CACD3;
+        border: 1px solid #5CACD3;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        color: white;
     }
     
-    #menuTriangle nav ul li:hover {
+    .menuTriangle nav ul li .arrow-down {
+        visibility: hidden;
+    }
+    
+    .menuTriangle nav ul li:hover .arrow-down {
+        visibility: visible;
+    }
+    
+    .menuTriangle nav ul li a:hover {
         color: white;
-        padding: 0%;
-        margin: 0%;
     }
     
     .positionActuel {
