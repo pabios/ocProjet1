@@ -1,395 +1,402 @@
-    body {
-        font-family: 'Century Gothic', Calibri, serif;
-        font-size: 13px;
-        margin: 0px;
-        padding: 0px;
-        background-color: #F5F5F5;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-    }
-    
-    .container {
-        /* margin: 0 auto;*/
-        width: 100%;
-        height: auto;
-        /* border-bottom: solid 10px blue;*/
-        margin-bottom: 100px;
-        position: absolute;
-        margin-top: 6%;
-        color: black;
-    }
-    
-    .entete {
-        margin-bottom: 4%;
-    }
-    
-    .entete h1 {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 4em;
-    }
-    
-    .dotWithBorder {
-        width: 20%;
-        margin: 0 auto;
-        padding: 0%;
-        height: auto;
-        border-top: 2px solid rgba(0, 0, 0, .1);
-        margin-bottom: 2%;
-    }
-    
-    .entete p {
-        width: 60%;
-        margin-left: 20%;
-    }
-    
-    .p1,
-    .p2,
-    .pservice {
-        font-size: 1.2em;
-        text-justify: auto;
-    }
-    
-    .p2 {
-        text-indent: 20%;
-    }
-    /*overlay image et text*/
-    
-    .containerOverlay {
-        position: relative;
-        width: 20%;
-        height: 20%;
-        display: inline-block;
-        margin: 20px;
-    }
-    
-    .image {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .text {
-        color: white;
-        font-size: 12px;
-        position: absolute;
-        top: 50%;
-        left: 35%;
-        transform: translate(-50%, -50%);
-        font-family: sans-serif;
-    }
-    
-    .descriptinPortofolio {
-        font-weight: bold;
-        font-size: 15px;
-        text-transform: capitalize;
-    }
-    
-    .overlayFade {
-        height: 50%;
-        width: 100%;
-        top: 50%;
-        left: 0;
-        background-color: #3a3837bd;
-    }
-    /*fontAwesome */
-    
-    .overlayFade i {
-        color: white;
-        background-color: #00b1ba;
-        border: 1px solid white;
-        border-radius: 100%;
-        width: 40px;
-        height: 40px;
-        margin-left: 70%;
-        margin-top: -70%;
-        padding-left: 5%;
-        padding-right: 8%;
-        padding-top: 4%;
-    }
-    
-    .entete i {
-        color: #00b1ba;
-        background-color: white;
-        font-size: 20px;
-        padding: 0.5%;
-        position: absolute;
-        top: 12.5%;
-        left: 48%;
-        border: 1px solid #ffffff;
-        border-radius: 45%;
-    }
-    
-    .overlay {
-        position: absolute;
-        opacity: 0;
-        transition: all .3s ease;
-        background-color: rgba(0, 0, 0, .5);
-    }
-    
-    .containerOverlay:hover .overlay,
-    .containerOverlay:hover .overlayFade {
-        opacity: 1;
-    }
-    /*media queries */
-    /**
+  body,
+  html {
+      font-family: 'Just Another Hand', cursive;
+      font-size: 13px;
+      margin: 0px;
+      padding: 0px;
+      background-color: #F5F5F5;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+  }
+  
+  .container {
+      /* margin: 0 auto;*/
+      width: 100%;
+      height: auto;
+      /* border-bottom: solid 10px blue;*/
+      margin-bottom: 100px;
+      position: absolute;
+      margin-top: 6%;
+      color: black;
+  }
+  
+  .entete {
+      margin-bottom: 4%;
+  }
+  
+  .entete h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 4em;
+  }
+  
+  .dotWithBorder {
+      width: 20%;
+      margin: 0 auto;
+      padding: 0%;
+      height: auto;
+      border-top: 2px solid rgba(0, 0, 0, .1);
+      margin-bottom: 2%;
+  }
+  
+  .entete p {
+      width: 80%;
+      margin-left: 15%;
+  }
+  
+  .p1,
+  .p2,
+  .pservice {
+      font-size: 2em;
+      text-justify: auto;
+  }
+  
+  .p2 {
+      text-indent: 20%;
+  }
+  /*overlay image et text*/
+  
+  .containerOverlay {
+      position: relative;
+      width: 20%;
+      height: 20%;
+      display: inline-block;
+      margin: 20px;
+  }
+  
+  .image {
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .text {
+      color: white;
+      font-size: 18px;
+      position: absolute;
+      top: 50%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+      font-family: sans-serif;
+  }
+  
+  .descriptinPortofolio {
+      font-weight: bold;
+      font-size: 15px;
+      text-transform: capitalize;
+  }
+  
+  .overlayFade {
+      height: 50%;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      background-color: #3a3837bd;
+  }
+  /*fontAwesome */
+  
+  .overlayFade i {
+      font-size: 2em;
+      color: white;
+      background-color: #468ABD;
+      border: 1px solid white;
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      margin-left: 80%;
+      margin-top: -70%;
+      padding: 3%;
+  }
+  
+  .entete i {
+      color: #468ABD;
+      background-color: white;
+      font-size: 20px;
+      padding: 0.5%;
+      position: absolute;
+      top: 15.5%;
+      left: 48%;
+      border: 1px solid #ffffff;
+      border-radius: 45%;
+  }
+  
+  .overlay {
+      position: absolute;
+      opacity: 0;
+      transition: all .3s ease;
+      background-color: rgba(0, 0, 0, .5);
+  }
+  
+  .containerOverlay:hover .overlay,
+  .containerOverlay:hover .overlayFade {
+      opacity: 1;
+  }
+  /*media queries */
+  /**
 * Responsive design avec le plus petit ecran  qu'un iphone 5
 **/
-    
-    @media screen and (max-width:300px) {
-        .entete i {
-            visibility: hidden;
-        }
-    }
-    /**
+  
+  @media screen and (max-width:300px) {
+      .entete i {
+          visibility: hidden;
+      }
+  }
+  /**
 *Responsive iphone 5 en mode portrait
 **/
-    
-    @media screen and (min-width:300px) and (max-width:640px) and (orientation: portrait) {
-        .entete h1 {
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 1em;
-        }
-        .dotWithBorder {
-            width: 20%;
-            margin: 0 auto;
-            padding: 0%;
-            height: auto;
-            border-top: 2px solid rgba(0, 0, 0, .1);
-            margin-bottom: 2%;
-        }
-        .entete i {
-            visibility: hidden;
-        }
-    }
-    
-    @media (max-width: 992px) {
-        .container {
-            margin-top: 20%;
-        }
-        .entete h1 {
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 1em;
-        }
-        .dotWithBorder {
-            /* visibility: hidden;*/
-            width: 10%;
-            margin: 0 auto;
-            padding: 0%;
-            height: auto;
-            border-top: 2px solid rgba(0, 0, 0, .1);
-            margin-bottom: 2%;
-        }
-        .entete i {
-            color: #00b1ba;
-            background-color: white;
-            font-size: 7px;
-            padding: 0.5%;
-            position: absolute;
-            top: 3%;
-            left: 49%;
-            border: 1px solid #ffffff;
-            border-radius: 45%;
-        }
-        .flexContainer {
-            display: flex;
-            flex-direction: column;
-            padding-left: 1px;
-            justify-content: space-around;
-            justify-content: space-between;
-            align-content: space-around;
-            width: 100%;
-            height: auto;
-        }
-        /*******
+  
+  @media screen and (min-width:300px) and (max-width:640px) and (orientation: portrait) {
+      .entete h1 {
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 1em;
+      }
+      .dotWithBorder {
+          width: 20%;
+          margin: 0 auto;
+          padding: 0%;
+          height: auto;
+          border-top: 2px solid rgba(0, 0, 0, .1);
+          margin-bottom: 2%;
+      }
+      .entete i {
+          visibility: hidden;
+      }
+  }
+  
+  @media (max-width: 992px) {
+      .container {
+          margin-top: 20%;
+      }
+      .entete h1 {
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 1em;
+      }
+      .dotWithBorder {
+          /* visibility: hidden;*/
+          width: 10%;
+          margin: 0 auto;
+          padding: 0%;
+          height: auto;
+          border-top: 2px solid rgba(0, 0, 0, .1);
+          margin-bottom: 2%;
+      }
+      .entete i {
+          color: #468ABD;
+          background-color: white;
+          font-size: 7px;
+          padding: 0.5%;
+          position: absolute;
+          top: 3%;
+          left: 49%;
+          border: 1px solid #ffffff;
+          border-radius: 45%;
+      }
+      .flexContainer {
+          display: flex;
+          flex-direction: column;
+          padding-left: 1px;
+          justify-content: space-around;
+          justify-content: space-between;
+          align-content: space-around;
+          width: 100%;
+          height: auto;
+      }
+      /*******
         * menu portofolio avec triangle  Responsive
         *******/
-        .menuTriangle {
-            background-color: black;
-            width: 2000px;
-            height: 80px;
-            margin-bottom: 50px;
-            margin-left: -10%;
-        }
-        .menuTriangle nav {
-            background-color: red;
-            height: auto;
-            /*margin: 0 auto;*/
-        }
-        .menuTriangle nav ul {
-            position: relative;
-            margin: 0;
-            padding: 0;
-            /* transition: .5s;*/
-            background-color: red;
-            border: 1px solid #E5E5E5;
-            border-radius: 8px;
-        }
-        .menuTriangle nav ul li:nth-child(4) {
-            visibility: hidden;
-            list-style: none;
-            height: auto;
-            margin: 1px;
-            color: red;
-        }
-        .menuTriangle nav ul li a {
-            color: red;
-            position: relative;
-            display: block;
-            /* margin: 25px 25px;*/
-            text-transform: lowercase;
-            text-decoration: none;
-            font-size: 2em;
-            font-weight: bold;
-        }
-        /**
+      .menuTriangle {
+          background-color: black;
+          width: 2000px;
+          height: 80px;
+          margin-bottom: 40px;
+          margin-left: -10%;
+      }
+      .menuTriangle nav {
+          background-color: red;
+          height: auto;
+          /*margin: 0 auto;*/
+      }
+      .menuTriangle nav ul {
+          position: relative;
+          margin: 0;
+          padding: 0;
+          /* transition: .5s;*/
+          background-color: red;
+          border: 1px solid #E5E5E5;
+          border-radius: 8px;
+      }
+      .menuTriangle nav ul li:nth-child(4) {
+          visibility: hidden;
+          list-style: none;
+          height: auto;
+          margin: 1px;
+          color: red;
+      }
+      .menuTriangle nav ul li a {
+          color: red;
+          position: relative;
+          display: block;
+          /* margin: 25px 25px;*/
+          text-transform: lowercase;
+          text-decoration: none;
+          font-size: 2em;
+          font-weight: bold;
+      }
+      /**
         * Portofolio Responsive
         **/
-        #portofolio {
-            display: flex;
-            flex-wrap: wrap;
-            width: auto;
-            margin-left: 20%;
-        }
-        .containerOverlay {
-            display: flex;
-            flex-wrap: wrap;
-            width: 200px;
-        }
-        .overlayFade i {
-            color: white;
-            background-color: #00b1ba;
-            border: 1px solid white;
-            border-radius: 100%;
-            width: 40px;
-            height: 40px;
-            margin-left: 70%;
-            margin-top: -70%;
-            padding-left: 6%;
-            padding-right: 8%;
-            padding-top: 6%;
-        }
-        /**
+      #portofolio {
+          display: flex;
+          flex-wrap: wrap;
+          width: auto;
+          margin-left: 20%;
+      }
+      .containerOverlay {
+          display: flex;
+          flex-wrap: wrap;
+          width: 200px;
+      }
+      .overlayFade i {
+          color: white;
+          background-color: #468ABD;
+          border: 1px solid white;
+          border-radius: 100%;
+          width: 40px;
+          height: 40px;
+          margin-left: 70%;
+          margin-top: -70%;
+          padding-left: 6%;
+          padding-right: 8%;
+          padding-top: 6%;
+      }
+      /**
         *footer
         **/
-        .foot {
-            background: rgba(255, 255, 255, .5);
-            color: black;
-            width: 100%;
-            padding-top: 10%;
-            text-align: center;
-            font-weight: bold;
-        }
-    }
-    /*le navigation avec les fleches de triangle */
-    
-    .arrow-down {
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-top: 9px solid #5CACD3;
-        position: relative;
-        top: 0.5%;
-        left: 36%;
-    }
-    /*menu portofolio avec triangle */
-    
-    .menuTriangle {
-        background-color: #F5F5F5;
-        width: 100%;
-        height: 100px;
-        margin-bottom: 50px;
-    }
-    
-    .menuTriangle nav {
-        width: 40%;
-        margin: 0 auto;
-        background-color: #E5E5E5;
-    }
-    
-    .menuTriangle nav ul {
-        position: relative;
-        padding: 0;
-        margin-right: 20%;
-        display: flex;
-        float: right;
-        /* transition: .5s;*/
-        background-color: #E5E5E5;
-        width: auto;
-        border: 1px solid #E5E5E5;
-        border-radius: 8px;
-        border: 1px solid transparent;
-    }
-    
-    .menuTriangle nav ul li {
-        border: 1px solid transparent;
-        list-style: none;
-        height: 69px;
-        padding: 0%;
-    }
-    
-    .menuTriangle nav ul li a {
-        border: 1px solid transparent;
-        text-align: center;
-        position: relative;
-        height: 100%;
-        width: 100%;
-        display: block;
-        /* margin: 25px 25px;*/
-        text-transform: capitalize;
-        text-decoration: none;
-        color: #262626;
-        font-size: 15px;
-        font-weight: bold;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 30px;
-    }
-    
-    #pabios {
-        /*  margin-top: 28%;*/
-    }
-    
-    .menuTriangle nav ul li :hover {
-        height: 69px;
-        width: auto;
-        background-color: #5CACD3;
-        border-bottom: 10px solid #5CACD3;
-        color: white;
-    }
-    
-    .menuTriangle nav ul li:hover+.lienDansMenuTriangle {
-        color: white;
-    }
-    
-    .menuTriangle nav ul li .arrow-down {
-        visibility: hidden;
-    }
-    
-    .menuTriangle nav ul li:hover .arrow-down {
-        visibility: visible;
-    }
-    
-    .menuTriangle nav ul li a:hover {
-        color: white;
-    }
-    
-    .positionActuel {
-        background-color: #5CACD3;
-    }
-    /*footer mp bricoler a refaire */
-    
-    .foot {
-        background: rgba(255, 255, 255, .5);
-        /* border-top: 2px solid black;*/
-        color: black;
-        width: 100%;
-        padding-top: 5%;
-        padding-bottom: 6%;
-        text-align: center;
-        font-weight: bold;
-    }
+      .foot {
+          background: rgba(255, 255, 255, .5);
+          color: black;
+          width: 100%;
+          padding-top: 10%;
+          text-align: center;
+          font-weight: bold;
+      }
+  }
+  /*le navigation avec les fleches de triangle */
+  
+  .arrow-down {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 9px solid #5CACD3;
+      position: relative;
+      top: -1%;
+      left: 36%;
+  }
+  /*menu portofolio avec triangle */
+  
+  .menuTriangle {
+      background-color: #F5F5F5;
+      width: 100%;
+      height: 100px;
+      margin-bottom: 20px;
+  }
+  
+  .menuTriangle nav {
+      width: 40%;
+      margin: 0 auto;
+      background-color: #E5E5E5;
+  }
+  
+  .menuTriangle nav ul {
+      position: relative;
+      padding: 0;
+      margin-right: 20%;
+      display: flex;
+      float: right;
+      /* transition: .5s;*/
+      background-color: #E5E5E5;
+      width: auto;
+      border: 1px solid #E5E5E5;
+      border-radius: 8px;
+      border: 1px solid transparent;
+  }
+  
+  .menuTriangle nav ul li {
+      border: 1px solid transparent;
+      list-style: none;
+      height: 69px;
+      padding: 0%;
+  }
+  
+  .menuTriangle nav ul li a {
+      border: 1px solid transparent;
+      text-align: center;
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: block;
+      /* margin: 25px 25px;*/
+      text-transform: capitalize;
+      text-decoration: none;
+      color: #262626;
+      font-size: 15px;
+      font-weight: bold;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 30px;
+  }
+  
+  #pabios {
+      /*  margin-top: 28%;*/
+  }
+  
+  .default {
+      background-color: #5CACD3;
+  }
+  
+  .menuTriangle nav ul li :hover {
+      height: 69px;
+      width: auto;
+      background-color: #5CACD3;
+      border-bottom: 10px solid #5CACD3;
+      color: white;
+  }
+  
+  .menuTriangle nav ul li:first-child .arrow-down {
+      visibility: visible;
+  }
+  
+  .menuTriangle nav ul li .arrow-down {
+      visibility: hidden;
+  }
+  
+  .menuTriangle nav ul li:hover .arrow-down {
+      visibility: visible;
+  }
+  
+  .menuTriangle nav ul li a:hover {
+      color: white;
+  }
+  
+  .positionActuel {
+      background-color: #5CACD3;
+  }
+  /*footer mp bricoler a refaire */
+  
+  .foot {
+      background-color: #97CDE6;
+      padding-top: 2%;
+      position: absolute;
+      top: 150vh;
+      /* border-top: 2px solid black;*/
+      color: black;
+      font-size: 20px;
+      width: 100%;
+      height: 13.2%;
+      text-align: center;
+      font-weight: bold;
+  }

@@ -327,3 +327,17 @@
                    visibility: hidden;
                }
            }
+           
+           .foot {
+               background-color: #97CDE6;
+               padding-top: 2%;
+               position: absolute;
+               top: 88vh;
+               /* border-top: 2px solid black;*/
+               color: black;
+               font-size: 20px;
+               width: 100%;
+               height: 13.2%;
+               text-align: center;
+               font-weight: bold;
+           }
