@@ -45,7 +45,7 @@ body {
     font-size: 20px;
     padding: 0.5%;
     position: absolute;
-    top: 21vh;
+    top: 19.5vh;
     left: 48%;
 }
 
@@ -139,8 +139,8 @@ body {
 .listeService span i {
     color: #5CACD3;
     position: relative;
-    top: 35%;
-    right: 36%;
+    top: 40%;
+    right: 45%;
 }
 
 

@@ -140,12 +140,12 @@
            
            .prev,
            .next {
-               width: 5%;
+               width: 2%;
                height: 20px;
                height: inherit;
                position: absolute;
                top: 0;
-               background-color: rgba(88, 88, 88, .2);
+               background-color: rgba(88, 88, 88, .9);
                color: rgba(244, 244, 244, .9);
                z-index: 99;
                transition: .45s;
@@ -158,7 +158,7 @@
                height: 10%;
                margin-top: 14%;
                padding-bottom: 3%;
-               padding-right: 2%;
+               /* padding-right: -10%;*/
                border-top-left-radius: 100%;
                border-bottom-left-radius: 100%;
            }
@@ -168,14 +168,14 @@
                height: 10%;
                margin-top: 14%;
                padding-bottom: 3%;
-               padding-right: 3%;
+               /* padding-right: 3%;*/
                border-top-right-radius: 100%;
                border-bottom-right-radius: 100%;
            }
            
            label span {
                position: absolute;
-               font-size: 100pt;
+               font-size: 20pt;
                top: 50%;
                transform: translateY(-50%);
            }
@@ -247,19 +247,55 @@
            
            @media screen and (max-width: 685px) {
                .container {
-                   margin-top: 250px;
+                   margin-top: 100px;
                    border: none;
                    width: 100%;
                    height: 0;
                    padding-bottom: 55%;
                }
+               /*
                label span {
-                   font-size: 50pt;
+                   font-size: 10pt;
                }
                .prev,
                .next {
                    width: 15%;
+               }*/
+               /****/
+               .prev,
+               .next {
+                   width: 2%;
+                   height: 20px;
+                   height: inherit;
+                   position: absolute;
+                   top: 0;
+                   background-color: rgba(88, 88, 88, .9);
+                   color: rgba(244, 244, 244, .9);
+                   z-index: 99;
+                   transition: .45s;
+                   cursor: pointer;
+                   text-align: center;
                }
+               .next {
+                   right: 0;
+                   height: 10%;
+                   margin-top: 14%;
+                   padding-bottom: 3%;
+                   padding-right: 2%;
+                   padding-left: 2%;
+                   border-top-left-radius: 100%;
+                   border-bottom-left-radius: 100%;
+               }
+               .prev {
+                   left: 0;
+                   height: 10%;
+                   margin-top: 14%;
+                   padding-bottom: 3%;
+                   /* padding-right: 3%;*/
+                   border-top-right-radius: 100%;
+                   border-bottom-right-radius: 100%;
+               }
+               /****/
                #nav_slide .dots {
                    width: 12px;
                    height: 12px;

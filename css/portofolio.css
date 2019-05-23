@@ -100,11 +100,13 @@
         background-color: #00b1ba;
         border: 1px solid white;
         border-radius: 100%;
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
         margin-left: 70%;
         margin-top: -70%;
-        padding: 8%;
+        padding-left: 5%;
+        padding-right: 8%;
+        padding-top: 4%;
     }
     
     .entete i {
@@ -257,6 +259,19 @@
             flex-wrap: wrap;
             width: 200px;
         }
+        .overlayFade i {
+            color: white;
+            background-color: #00b1ba;
+            border: 1px solid white;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            margin-left: 70%;
+            margin-top: -70%;
+            padding-left: 6%;
+            padding-right: 8%;
+            padding-top: 6%;
+        }
         /**
         *footer
         **/
@@ -274,12 +289,12 @@
     .arrow-down {
         width: 0;
         height: 0;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-top: 15px solid #5CACD3;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 9px solid #5CACD3;
         position: relative;
-        top: 12%;
-        left: 30%;
+        top: 0.5%;
+        left: 36%;
     }
     /*menu portofolio avec triangle */
     
@@ -298,46 +313,56 @@
     
     .menuTriangle nav ul {
         position: relative;
-        margin: 0;
         padding: 0;
+        margin-right: 20%;
         display: flex;
         float: right;
         /* transition: .5s;*/
         background-color: #E5E5E5;
-        width: 100%;
+        width: auto;
         border: 1px solid #E5E5E5;
         border-radius: 8px;
+        border: 1px solid transparent;
     }
     
     .menuTriangle nav ul li {
+        border: 1px solid transparent;
         list-style: none;
         height: 69px;
-        margin: 1px;
-        padding: 5%;
+        padding: 0%;
     }
     
     .menuTriangle nav ul li a {
+        border: 1px solid transparent;
+        text-align: center;
         position: relative;
+        height: 100%;
+        width: 100%;
         display: block;
         /* margin: 25px 25px;*/
         text-transform: capitalize;
         text-decoration: none;
         color: #262626;
-        font-size: 11px;
+        font-size: 15px;
         font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
     }
     
     #pabios {
-        margin-top: 28%;
+        /*  margin-top: 28%;*/
     }
     
-    .menuTriangle nav ul li:hover {
+    .menuTriangle nav ul li :hover {
         height: 69px;
         width: auto;
         background-color: #5CACD3;
-        border: 1px solid #5CACD3;
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
+        border-bottom: 10px solid #5CACD3;
+        color: white;
+    }
+    
+    .menuTriangle nav ul li:hover+.lienDansMenuTriangle {
         color: white;
     }
     

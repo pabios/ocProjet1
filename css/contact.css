@@ -87,6 +87,7 @@
             left: 52%;
         }
         .foot {
+            visibility: visible;
             background: rgba(255, 255, 255, .5);
             /* border-top: 2px solid black;*/
             color: black;

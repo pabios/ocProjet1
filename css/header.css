@@ -2,14 +2,12 @@
     box-sizing: border-box;
 }
 
-
-/*
 html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
-}*/
+}
 
 body {
     margin: 0;
@@ -42,11 +40,6 @@ body {
     padding-right: 50px;
 }
 
-nav {
-    background-color: #000;
-    padding-top: 1px;
-}
-
 .logo {
     position: fixed;
     background-color: white;
@@ -68,32 +61,58 @@ nav {
     margin-left: 25%;
 }
 
-nav ul {
+.containerMenu nav ul {
     float: left;
     margin-top: 2px;
-    margin-left: 30%;
+    margin-left: 20%;
+    padding-top: 20px;
 }
 
-nav ul li {
+.containerMenu nav ul li {
+    border-top: 5px solid transparent;
     display: inline-block;
     float: left;
-    height: 200px;
-    padding-top: 5.1%;
+    height: 90%;
+    margin-right: 40px;
+    margin-top: -4%;
+    margin-bottom: 10px;
 }
 
-nav ul li:hover {
+.containerMenu nav ul li:hover {
     border-top: 5px solid #5CACD3;
-    padding-top: 4%;
-    height: auto;
+    /* padding-top: 4%;*/
+    height: 95%;
+    margin-right: 40px;
+    margin-top: -4%;
+    margin-bottom: 20px;
 }
+
+.aPortofolia {
+    margin-top: -10px;
+}
+
+.containerMenu nav ul li:first-child {
+    padding-top: 7px;
+}
+
+
+/*
 
 nav ul li:not(:first-child) {
     margin-left: 20px;
 }
 
+
+
+nav ul li:nth-child(2) {
+    margin-top: 1%;
+}
+
 nav ul li:last-child {
+    margin-top: 1%;
     margin-right: 24px;
 }
+*/
 
 nav ul li a {
     display: inline-block;
@@ -104,6 +123,7 @@ nav ul li a {
     font-size: 14px;
     letter-spacing: 1.2px;
     font-weight: 600;
+    padding-top: 40%;
 }
 
 @media screen and (max-width: 992px) {
@@ -112,6 +132,7 @@ nav ul li a {
         background-color: white;
         height: 0;
     }
+    /*
     .nav-wrapper {
         position: fixed;
         top: 0;
@@ -122,21 +143,52 @@ nav ul li a {
         background: #fff;
         opacity: 0;
         transition: all 0.2s ease;
+    }*/
+    .nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: -1;
+        transition: all 0.2s ease;
     }
     .nav-wrapper ul {
+        background-color: #000;
         position: absolute;
-        top: 50%;
+        top: 40%;
+        left: 10%;
         transform: translateY(-50%);
-        width: 100%;
+        width: 50%;
+        height: auto;
     }
     .nav-wrapper ul li {
+        background-color: gray;
+        border: 5px solid black;
         display: block;
         float: none;
         width: 100%;
         text-align: right;
-        margin-bottom: 10px;
-        /*new now */
         height: auto;
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
+    .nav-wrapper ul li:hover {
+        background-color: white;
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: right;
+        height: auto;
+        margin-right: 40px;
+        margin-top: -4%;
+        margin-bottom: 20px;
+    }
+    .nav-wrapper ul li:hover a {
+        border: 0px;
+        padding-top: 0px;
+        color: aquamarine;
+        transition: 0ms;
+        width: 100%;
     }
     .nav-wrapper ul li:nth-child(1) a {
         transition-delay: 0.2s;
@@ -154,9 +206,24 @@ nav ul li a {
         margin-left: 0;
     }
     .nav-wrapper ul li a {
-        padding: 10px 24px;
+        padding-left: 30px;
+        padding-bottom: 2%;
+        position: relative;
+        right: 20%;
         opacity: 0;
-        color: #000;
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        transform: translateX(-20px);
+        transition: all 0.2s ease;
+    }
+    .nav-wrapper ul li a:hover {
+        padding-left: 30px;
+        position: relative;
+        right: 20%;
+        opacity: 0;
+        color: black;
         font-size: 14px;
         font-weight: 600;
         letter-spacing: 1.2px;
