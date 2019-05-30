@@ -10,21 +10,29 @@ html {
     /* margin: 0 auto;*/
     width: 100%;
     background-color: white;
-    position: absolute;
-    top: 15%;
+    position: relative;
+    top: 1%;
 }
 
-.bodyContact {
+#bodyContact {
+    background-color: #FFFFFFd;
+    width: 100%;
+    height: 80vh;
     width: 100%;
     height: 100%;
 }
 
 .filtre {
-    position: relative;
-    widows: 100%;
-    height: 160%;
+    position: absolute;
+    top: 443vh;
+    width: 100%;
+    height: 102vh;
     background-color: rgba(70, 138, 189, 0.3);
-    z-index: 3;
+    //*  z-index: 3;*/
+}
+
+.filtre h3 {
+    visibility: hidden;
 }
 
 .filtre:hover {
@@ -33,7 +41,7 @@ html {
 
 .googleMap iframe {
     width: 100%;
-    height: 980px;
+    height: 100vh;
 }
 
 
@@ -45,11 +53,11 @@ html {
     background: #F0F5F7;
     padding: 20px 20px;
     box-sizing: border-box;
-    position: fixed;
-    left: 80%;
-    top: 55%;
     transform: translate(-50%, -50%);
-    margin-bottom: 30%;
+    /* margin-bottom: 30%;*/
+    position: absolute;
+    top: 45%;
+    left: 78%;
     z-index: 30;
 }
 
@@ -101,18 +109,83 @@ input[type="button"]:hover {
 *Responsive iphone 5 en mode portrait
 **/
 
-@media (max-width: 992px) {
+@media only screen and (max-width:582px) {
+    #bodyContact {
+        height: 203vh;
+        border: 1px solid transparent;
+        position: relative;
+        z-index: 30;
+    }
     .form-wrap {
+        font-size: 1.4em;
         width: 90%;
-        height: 530px;
+        height: auto;
         background: #F0F5F7;
         padding: 20px 20px;
         box-sizing: border-box;
         transform: translate(-50%, -50%);
-        margin-bottom: 2%;
-        position: absolute;
-        top: 80em;
+        position: relative;
+        top: 50vh;
         left: 52%;
+    }
+    .filtre:hover {
+        visibility: hidden;
+    }
+    /**********************
+                      * contact Responsive tablete
+                      **************************/
+    .filtre {
+        visibility: hidden;
+    }
+    .foot {
+        visibility: visible;
+        background: #97CDE6;
+        /* border-top: 2px solid black;*/
+        color: black;
+        width: 100%;
+        padding-top: 5%;
+        padding-bottom: 6%;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 280vh;
+    }
+}
+
+@media screen and (min-width:583px) and (max-width: 992px) {
+    body {
+        height: 900px;
+        border: 4px solid yellow;
+    }
+    #bodyContact {
+        margin-top: 10%;
+        height: 220vh;
+        border: 1px solid black;
+        background-color: #ffffff;
+        position: relative;
+        z-index: 30;
+    }
+    .form-wrap {
+        font-size: 1.4em;
+        width: 90%;
+        height: auto;
+        background: #F0F5F7;
+        padding: 20px 20px;
+        box-sizing: border-box;
+        transform: translate(-50%, -50%);
+        margin-top: 4%;
+        margin-bottom: -100px;
+        position: absolute;
+        top: 49em;
+        left: 52%;
+    }
+    .filtre:hover {
+        visibility: hidden;
+    }
+    /**********************
+                      * contact Responsive tablete
+                      **************************/
+    .filtre {
+        visibility: hidden;
     }
     .foot {
         visibility: visible;

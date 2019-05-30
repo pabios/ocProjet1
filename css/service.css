@@ -10,18 +10,20 @@ html {
     margin: 0;
 }
 
-.container {
+#service {
+    background-color: #FFFFFFd;
+    width: 100%;
+    height: 192vh;
+}
+
+#service .container {
     /* margin: 0 auto;*/
     width: 100%;
     height: auto;
-    /* border-bottom: solid 10px blue;*/
-    margin-bottom: 100px;
-    position: absolute;
-    margin-top: 6%;
     color: black;
 }
 
-.entete {
+#service.entete {
     margin-bottom: 4%;
 }
 
@@ -38,19 +40,20 @@ html {
     height: auto;
     border-top: 2px solid rgba(0, 0, 0, .1);
     margin-bottom: 2%;
+    margin-top: -1.5%;
 }
 
-.entete i {
+#service .entete i {
     color: #00b1ba;
     background-color: white;
     font-size: 20px;
     padding: 0.5%;
-    position: absolute;
-    top: 17.5vh;
-    left: 48%;
+    margin-left: 48%;
+    border: 1px solid white;
+    border-radius: 50%;
 }
 
-.entete p {
+#service .entete p {
     width: 80%;
     margin-left: 14%;
 }
@@ -133,21 +136,65 @@ html {
 
 /*fontAwesome */
 
+.foto {
+    width: auto;
+}
+
 .foto i {
     color: #5CACD3;
     border: 1px solid black;
     border-radius: 50%;
     font-size: 40px;
     padding: 15px;
-    margin-top: 60%;
+    margin-top: 95%;
     margin-left: 2.5%;
 }
 
 .listeService span i {
+    font-size: 1.5em;
     color: #5CACD3;
     position: relative;
     top: 40%;
     right: 45%;
+}
+
+
+/***
+* Galaxy S5   
+ ***/
+
+@media screen and (min-width:320px) and (max-width:360px) {
+    #service {
+        position: absolute;
+        top: 90px;
+        height: 500vh;
+    }
+    #service .entete h1 {
+        font-size: 0.2em;
+        white-space: nowrap;
+        margin-left: 25px;
+    }
+    #service .entete .p1 {
+        font-size: 18px;
+    }
+    #service .entete .p2 {
+        font-size: 18px;
+    }
+    #service .listeService .infoService .pservice {
+        width: 100%;
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width:582px) {
+    #service {
+        position: relative;
+        z-index: 30;
+        margin-bottom: 2%;
+    }
+    #service .paragrapheEntete p {
+        font-size: 1em;
+    }
 }
 
 
@@ -158,7 +205,7 @@ html {
 @media screen and (max-width:300px) {
     .foto i {
         color: #5CACD3;
-        border: 1px solid black;
+        border: 1px solid transparent;
         border-radius: 50%;
         font-size: 30px;
         padding: 15px;
@@ -182,9 +229,8 @@ html {
         margin-top: 2%;
         width: 100%;
     }
-    h1 {
-        color: blue;
-        margin-left: 40%;
+    #service .entete h1 {
+        margin-left: 50%;
         width: 100%;
     }
     .dotWithBorder {
@@ -210,14 +256,12 @@ html {
     .paragrapheEntete {
         width: 180%;
         margin-top: -4vh;
-    }
-    .entete p {
-        padding-left: 4%;
+        font-size: 1.5em;
     }
     .p1,
     .p2,
     .pservice {
-        font-size: 1.2em;
+        font-size: 1em;
         text-justify: auto;
     }
     .p2 {
@@ -225,7 +269,60 @@ html {
     }
 }
 
-@media (max-width: 992px) {
+@media only screen and (max-width: 769px) {
+    /*******
+    * service responsive
+    *************************/
+    #service {
+        margin-bottom: 1px;
+        position: relative;
+        z-index: 30;
+    }
+    .description {
+        width: 100%;
+        margin-left: -20%;
+    }
+    .description span {
+        font-size: 3em;
+    }
+    .description em {
+        font-size: 2em;
+    }
+    #service .entete {
+        margin-top: -10%;
+    }
+    .entete i {
+        visibility: hidden;
+    }
+    #service .entete h1 {
+        font-size: 20px;
+        margin-bottom: 1px;
+        margin-top: 1px;
+    }
+    .paragrapheEntete {
+        width: 200%;
+        margin-top: -20%;
+        margin-left: -10%;
+    }
+    .foto {
+        margin-top: -4.5%;
+    }
+}
+
+@media only screen (max-width: 375px) {
+    .containerMenu .logo {
+        z-index: 11;
+    }
+    #service {
+        background-color: #FFFFFF;
+        border: 1px solid black;
+        width: 100%;
+        height: 173vh;
+        margin-top: 50%;
+        margin-bottom: 2%;
+        position: relative;
+        z-index: 30;
+    }
     .container {
         flex-wrap: wrap;
         width: 100%;
@@ -239,9 +336,9 @@ html {
     }
     .entete h1 {
         width: 150%;
-        color: black;
+        color: #5CACD3;
         text-transform: uppercase;
-        font-size: 2em;
+        border: 1px solid dotted;
     }
     .dotWithBorder {
         width: 45%;
@@ -291,9 +388,11 @@ html {
         width: 100%;
         height: auto;
         margin: 0;
+        padding-left: 10%;
     }
     .infoService {
         padding-right: 20%;
+        font-size: 0.7em;
     }
     .ui {
         width: 100%;
@@ -319,6 +418,232 @@ html {
         border-radius: 55%;
         margin-top: 30%;
         margin-right: 10%;
+    }
+    .infoService {
+        padding-left: 5%;
+    }
+    .foot {
+        background: rgba(255, 255, 255, .5);
+        color: black;
+        width: 100%;
+        padding-top: 10%;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 582px) {
+    .containerMenu .logo {
+        z-index: 11;
+    }
+    #service {
+        background-color: #FFFFFF;
+        border: 1px solid transparent;
+        width: 99%;
+        height: 178vh;
+        margin-top: 38%;
+        margin-bottom: 2%;
+        position: relative;
+        z-index: 30;
+    }
+    .container {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+        margin-top: 10%;
+    }
+    .entete {
+        width: 100%;
+        margin-bottom: 2%;
+        padding-right: 50%;
+    }
+    .entete h1 {
+        width: 150%;
+        color: #5CACD3;
+        text-transform: uppercase;
+        border: 1px solid dotted;
+    }
+    .dotWithBorder {
+        width: 45%;
+        margin: 0 auto;
+        padding: 0%;
+        height: auto;
+        border-top: 2px solid rgba(0, 0, 0, .1);
+        margin-bottom: auto;
+        margin-left: 50%;
+    }
+    .entete i {
+        color: #00b1ba;
+        background-color: white;
+        font-size: 10px;
+        padding: 0.5%;
+        position: absolute;
+        top: 10.5vh;
+        left: 35%;
+    }
+    .entete p {
+        width: 100%;
+        margin-left: 5%;
+    }
+    .p1 {
+        margin-top: 15%;
+    }
+    .p1,
+    .p2,
+    .pservice {
+        font-size: 1em;
+        text-justify: auto;
+    }
+    .p2 {
+        text-indent: 15%;
+    }
+    /*liste des services pour mobile responsive */
+    .tvApple {
+        margin: 0;
+        height: auto;
+        width: 100%;
+    }
+    .tvApple img {
+        width: 100%;
+        margin: 0;
+    }
+    .listeService {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding-left: 10%;
+    }
+    .infoService {
+        padding-right: 20%;
+        font-size: 0.7em;
+    }
+    .ui {
+        width: 100%;
+        height: auto;
+    }
+    .ux {
+        width: 100%;
+        height: auto;
+    }
+    .seo {
+        width: 100%;
+        height: auto;
+    }
+    .ux,
+    .ui,
+    .seo {
+        display: flex;
+    }
+    .infoService {
+        padding-left: 5%;
+    }
+    .foot {
+        background: rgba(255, 255, 255, .5);
+        color: black;
+        width: 100%;
+        padding-top: 10%;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width: 992px) {
+    #service {
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 190vh;
+        margin-top: 30%;
+        margin-bottom: 2%;
+        position: relative;
+        z-index: 30;
+    }
+    .container {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+        margin-top: 10%;
+    }
+    .entete {
+        width: 100%;
+        margin-bottom: 2%;
+        padding-right: 50%;
+    }
+    .entete h1 {
+        width: 150%;
+        color: #5CACD3;
+        text-transform: uppercase;
+        border: 1px solid dotted;
+    }
+    .dotWithBorder {
+        width: 45%;
+        margin: 0 auto;
+        padding: 0%;
+        height: auto;
+        border-top: 2px solid rgba(0, 0, 0, .1);
+        margin-bottom: auto;
+        margin-left: 50%;
+    }
+    .entete i {
+        color: #00b1ba;
+        background-color: white;
+        font-size: 10px;
+        padding: 0.5%;
+        position: absolute;
+        top: 10.5vh;
+        left: 35%;
+    }
+    .entete p {
+        width: 100%;
+        margin-left: 5%;
+    }
+    .p1 {
+        margin-top: 15%;
+    }
+    .p1,
+    .p2,
+    .pservice {
+        font-size: 1em;
+        text-justify: auto;
+    }
+    .p2 {
+        text-indent: 15%;
+    }
+    /*liste des services pour mobile responsive */
+    .tvApple {
+        margin: 0;
+        height: auto;
+        width: 100%;
+    }
+    .tvApple img {
+        width: 100%;
+        margin: 0;
+    }
+    .listeService {
+        padding-left: 10%;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .infoService {
+        padding-right: 20%;
+        font-size: 0.7em;
+    }
+    .ui {
+        width: 100%;
+        height: auto;
+    }
+    .ux {
+        width: 100%;
+        height: auto;
+    }
+    .seo {
+        width: 100%;
+        height: auto;
+    }
+    .ux,
+    .ui,
+    .seo {
+        display: flex;
     }
     .infoService {
         padding-left: 5%;

@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: auto;
     font-family: Poppins;
     font-weight: 400;
     background-position: center;
@@ -24,6 +24,7 @@ body {
     background-color: #000;
     width: 100%;
     height: 80%;
+    margin-top: -80px;
 }
 
 .nav-wrapper {
@@ -131,6 +132,7 @@ nav ul li a {
         padding: 0;
         background-color: white;
         height: 0;
+        z-index: 10;
     }
     /*
     .nav-wrapper {
